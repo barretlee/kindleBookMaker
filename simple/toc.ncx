@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN"
+   "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+  <head/>
+  <docTitle><text>KF8</text></docTitle>
+  <navMap>
+    <navPoint id="navpoint-1" playOrder="1">
+      <navLabel><text>Content</text></navLabel>
+      <content src="toc.html#toc"/>
+    </navPoint>
+    
+    
+    
+    
+      <navPoint id="navpoint-2" playOrder="2">
+        <navLabel><text>Image Styling</text></navLabel>
+        <content src="image.html"/>
+      </navPoint>
+      
+      <navPoint id="navpoint-3" playOrder="3">
+        <navLabel><text>Image Styling</text></navLabel>
+        <content src="image.html#id2"/>
+      </navPoint>
+      
+      <navPoint id="navpoint-4" playOrder="4">
+        <navLabel><text>Image Alignment</text></navLabel>
+        <content src="image.html#id3"/>
+      </navPoint>
+      
+      <navPoint id="navpoint-5" playOrder="5">
+        <navLabel><text>Image Shadow</text></navLabel>
+        <content src="image.html#id4"/>
+      </navPoint>
+      
+    
+    
+    
+      <navPoint id="navpoint-6" playOrder="6">
+        <navLabel><text>Text Styling - &#x4E2D;&#x6587;</text></navLabel>
+        <content src="text.html"/>
+      </navPoint>
+      
+      <navPoint id="navpoint-7" playOrder="7">
+        <navLabel><text>Font Styles</text></navLabel>
+        <content src="text.html#id1"/>
+      </navPoint>
+      
+      <navPoint id="navpoint-8" playOrder="8">
+        <navLabel><text>Text Styling</text></navLabel>
+        <content src="text.html#id2"/>
+      </navPoint>
+      
+      <navPoint id="navpoint-9" playOrder="9">
+        <navLabel><text>Text Alignment</text></navLabel>
+        <content src="text.html#id3"/>
+      </navPoint>
+      
+      <navPoint id="navpoint-10" playOrder="10">
+        <navLabel><text>Text Shadow</text></navLabel>
+        <content src="text.html#id4"/>
+      </navPoint>
+      
+      <navPoint id="navpoint-11" playOrder="11">
+        <navLabel><text>Drop Caps</text></navLabel>
+        <content src="text.html#id5"/>
+      </navPoint>
+      
+      <navPoint id="navpoint-12" playOrder="12">
+        <navLabel><text>Display Dimension</text></navLabel>
+        <content src="text.html#id6"/>
+      </navPoint>
+      
+      <navPoint id="navpoint-13" playOrder="13">
+        <navLabel><text>Border</text></navLabel>
+        <content src="text.html#id7"/>
+      </navPoint>
+      
+      <navPoint id="navpoint-14" playOrder="14">
+        <navLabel><text>Background</text></navLabel>
+        <content src="text.html#id8"/>
+      </navPoint>
+      
+      <navPoint id="navpoint-15" playOrder="15">
+        <navLabel><text>Border Styling</text></navLabel>
+        <content src="text.html#id9"/>
+      </navPoint>
+      
+      <navPoint id="navpoint-16" playOrder="16">
+        <navLabel><text>Tables</text></navLabel>
+        <content src="text.html#id10"/>
+      </navPoint>
+      
+    
+    
+  </navMap>
+</ncx>

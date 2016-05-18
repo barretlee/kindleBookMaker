@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN"
+   "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+  <head></head>
+  <docTitle><text>KF8</text></docTitle>
+  <navMap>
+    <navPoint id="navpoint-1" playOrder="1">
+      <navLabel><text>Content</text></navLabel>
+      <content src="toc.html#toc"/>
+    </navPoint>
+    <% var count = 1;
+    pages.forEach(function(page) {%>
+    <% if(page.id !== 'toc.html') {  count++; %>
+      <navPoint id="navpoint-<%- count %>" playOrder="<%- count %>">
+        <navLabel><text><%- page.name %></text></navLabel>
+        <content src="<%- page.id %>"/>
+      </navPoint>
+      <% (page.anchors || []).forEach(function(anchor) { count++;%>
+      <navPoint id="navpoint-<%- count %>" playOrder="<%- count %>">
+        <navLabel><text><%- anchor.name %></text></navLabel>
+        <content src="<%- page.id %>#<%- anchor.id %>"/>
+      </navPoint>
+      <% }); %>
+    <% } %>
+    <% }); %>
+  </navMap>
+</ncx>

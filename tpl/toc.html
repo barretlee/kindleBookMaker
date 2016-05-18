@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang='zh'>
+<head>
+  <title><% if( lang == 'zh'){ %>目录<%} else {%>TOC<% } %></title>
+  <link type="text/css" href="style/styles.css" rel="Stylesheet"/>
+</head>
+<body>
+<h1 id="toc"><% if( lang == 'zh'){ %>目录<%} else {%>Table of Contents<% } %></h1>
+<% pages.forEach(function(page) {%>
+  <% if(page.id !== 'toc.html') { %>
+	<h2><a href="<%- page.id %>"><%- page.name %></a></h2>
+	<ul>
+  <% (page.anchors || []).forEach(function(anchor) { %>
+		<li><a href="<%- page.id %>#<%- anchor.id %>"><%- anchor.name %></a></li>
+  <% }); %>
+	</ul>
+  <% } %>
+<% }); %>
+</body>
+</html>

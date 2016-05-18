@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<package unique-identifier="uid" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:asd="http://www.idpf.org/asdfaf">
+	<metadata>
+		<dc-metadata xmlns:dc="http://purl.org/metadata/dublin_core" xmlns:oebpackage="http://openebook.org/namespaces/oeb-package/1.0/">
+			<dc:Title><%- title %></dc:Title>
+			<dc:Language><%- lang %></dc:Language>
+			<dc:Creator><%- creator %></dc:Creator>
+			<dc:Copyrights><%- copyright || creator %></dc:Copyrights>
+			<dc:Publisher><%- publisher || creator %></dc:Publisher>
+			<x-metadata>
+				<EmbeddedCover><%- coverImage %></EmbeddedCover>
+			</x-metadata>
+		</dc-metadata>
+	</metadata>
+	<manifest>
+		<item id="ncx" media-type="application/x-dtbncx+xml" href="toc.ncx"/>
+		<% for(var key in pages) { %>
+  	<item id="id-<%- key %>" media-type="text/x-oeb1-document" href="<%- pages[key].id %>"></item>
+  	<% } %>
+	</manifest>
+	<spine toc="ncx">
+		<% for(var key in pages) { %>
+		<itemref idref="id-<%- key %>"/>
+  	<% } %>
+	</spine>
+	<guide>
+		<% for(var key in pages) {
+			if(pages[key].id === 'toc.html') { %>
+			<reference type="toc" title="<% if( lang == 'zh'){ %>目录<% } else { %>Table of Contents<% } %>" href="toc.html"/>
+			<% } %>
+  	<% } %>
+	</guide>
+</package>

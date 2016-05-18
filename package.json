@@ -1,0 +1,30 @@
+{
+  "name": "kindle-book-maker",
+  "version": "0.0.1",
+  "description": "Kindle Book Maker with KindleGen",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barretlee/kindleBookMaker.git"
+  },
+  "keywords": [
+    "kindle",
+    "book",
+    "kindleBookMaker",
+    "KindleGen"
+  ],
+  "author": "Barret Lee <barret.china@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/barretlee/kindleBookMaker/issues"
+  },
+  "homepage": "https://github.com/barretlee/kindleBookMaker#readme",
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "ejs": "~2.4.1",
+    "log-color": "~1.0.0"
+  }
+}
