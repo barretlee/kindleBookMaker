@@ -7,8 +7,8 @@ Kindle Book Maker with KindleGen, Make Book from RSS.
 
 ### Todo
 
-- [] generate from markdown file directly.
-- [] pull RSS source file, and generate kindle book at regular intervals.
+- generate from markdown file directly.
+- pull RSS source file, and generate kindle book at regular intervals.
 
 ### Relative articles
 
