@@ -3,7 +3,15 @@ Kindle Book Maker
 
 Kindle Book Maker with KindleGen, Make Book from RSS.
 
-**More Detail README doc coming soon.**
+**More Detail README doc coming soon (功能还不够完善，可以围观或者代码拿过去自己研究，会持续补充和优化)**
+
+### Usage
+
+```
+node index
+bin/kindlegen simple/*.opf
+open simple/*.mobi
+```
 
 ### Todo
 
