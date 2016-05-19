@@ -29,6 +29,7 @@
     "log-color": "~1.0.0",
     "mkdirp": "~0.5.1",
     "moment": "~2.13.0",
+    "nodemailer": "~2.4.1",
     "parse-rss": "~1.0.3",
     "request": "~2.72.0"
   }

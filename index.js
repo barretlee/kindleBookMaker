@@ -1,3 +1,3 @@
-var app = require('./lib/index');
+var app = require('./lib/generator');
 
 app.init();

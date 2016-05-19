@@ -8,7 +8,7 @@
 <h1 id="toc"><% if( lang == 'zh'){ %>目录<%} else {%>Table of Contents<% } %></h1>
 <% pages.forEach(function(page) {%>
   <% if(page.id !== 'toc.html') { %>
-	<h2><a href="<%- page.id %>"><%- page.name %></a></h2>
+	<h4><a href="<%- page.id %>"><%- page.name %></a></h4>
 	<ul>
   <% (page.anchors || []).forEach(function(anchor) { %>
 		<li><a href="<%- page.id %>#<%- anchor.id %>"><%- anchor.name %></a></li>
