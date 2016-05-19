@@ -3,6 +3,7 @@ node_modules/
 config.js
 *.mobi
 *.log
+build/
 
 
 # generate file
