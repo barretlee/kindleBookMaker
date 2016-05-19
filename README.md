@@ -1,7 +1,7 @@
 Kindle Book Maker
 ---
 
-Kindle Book Maker with KindleGen, Make Book from RSS.
+Kindle Book Maker with KindleGen, Make Book from RSS/single URL/directory and so on.
 
 **More Detail README doc coming soon (功能还不够完善，可以围观或者代码拿过去自己研究，会持续补充和优化)**
 
@@ -22,3 +22,7 @@ open simple/*.mobi
 - http://www.idpf.org/epub/30/spec/epub30-publications.html#sec-item-property-values
 - http://www.idpf.org/epub/20/spec/OPF_2.0.1_draft.htm
 - http://www.aliciaramirez.com/2014/05/how-to-make-a-kindle-ebook-from-scratch/
+
+### LICENSE
+
+MIT.

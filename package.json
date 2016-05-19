@@ -26,6 +26,9 @@
   "dependencies": {
     "cheerio": "^0.20.0",
     "ejs": "~2.4.1",
-    "log-color": "~1.0.0"
+    "log-color": "~1.0.0",
+    "mkdirp": "~0.5.1",
+    "moment": "~2.13.0",
+    "parse-rss": "~1.0.3"
   }
 }

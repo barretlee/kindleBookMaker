@@ -1,5 +1,8 @@
 module.exports = {
-  entry: './simple/',
+  entry: {
+    base: './simple/',
+    list: []
+  },
   bookInfo: {
     title: "Barret Lee's Personal Website",
     lang: "zh",
