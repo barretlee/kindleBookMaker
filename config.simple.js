@@ -21,10 +21,8 @@ module.exports = {
   },
   /*option*/
   push2kindle: {
-    nodemailer: {
-      email: 'barret.china@gmail.com',
-      password: 'your-email-password',
-      kindle: 'barretlee.com@kindle.cn'
-    }
+    email: 'barret.china@gmail.com',
+    password: 'your-email-password',
+    kindle: 'barretlee.com@kindle.cn'
   }
 };

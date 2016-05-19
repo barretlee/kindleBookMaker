@@ -33,12 +33,17 @@ var cli = commandLineArgs([{
   alias: 'd',
   type: String,
   description: '`directory`, eg: -d ./simple/KF8-Demo/'
+}, {
+  name: 'push2kindle',
+  alias: 'p',
+  type: Boolean,
+  description: 'push to kindle'
 }]);
 var options = cli.parse();
 
 ~ function start() {
   if (!options.uri && !options.rss && !options.directory) {
-    bookGenerator.init(options.verbose);
+    bookGenerator.init(options.verbose, options.push2kindle);
   }
   // directory detect
   if (options.directory) {
@@ -48,7 +53,7 @@ var options = cli.parse();
     }
     cfg.entry.base = options.directory;
     if(!options.uri && !options.rss) {
-      bookGenerator.init(options.verbose);
+      bookGenerator.init(options.verbose, options.push2kindle);
       return;
     }
   }
@@ -63,7 +68,7 @@ var options = cli.parse();
     }
     uriSpider(cfg.singlePage.uri, cfg.singlePage.query).then(function(data) {
       // console.log(data);
-      bookGenerator.init(options.verbose);
+      bookGenerator.init(options.verbose, options.push2kindle);
     });
     return;
   }
@@ -71,7 +76,7 @@ var options = cli.parse();
   if (options.rss) {
     rssSpider(options.rss).then(function(data) {
       // console.log(data);
-      bookGenerator.init(options.verbose);
+      bookGenerator.init(options.verbose, options.push2kindle);
     });
     return;
   }
