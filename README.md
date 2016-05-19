@@ -9,7 +9,7 @@ Kindle Book Maker with KindleGen, Make Book from RSS/single URL/directory and so
 
 ```
 node index
-open simple/*.mobi
+open build/*.mobi
 ```
 
 ### Todo
