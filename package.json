@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "run": "node index.js",
-    "reset": "rm -rf simple/toc.* simple/*.opf simple/*.mobi;"
+    "reset": "rm -rf simple/toc.* simple/*.opf simple/*.mobi src/demo/*.html src/demo/style;"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
   "homepage": "https://github.com/barretlee/kindleBookMaker#readme",
   "dependencies": {
     "cheerio": "^0.20.0",
+    "command-line-args": "~2.1.6",
     "ejs": "~2.4.1",
     "log-color": "~1.0.0",
     "mkdirp": "~0.5.1",

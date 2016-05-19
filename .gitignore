@@ -4,6 +4,7 @@ config.js
 *.mobi
 *.log
 build/
+resource/
 
 
 # generate file
