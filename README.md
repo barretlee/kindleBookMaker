@@ -9,7 +9,6 @@ Kindle Book Maker with KindleGen, Make Book from RSS.
 
 ```
 node index
-bin/kindlegen simple/*.opf
 open simple/*.mobi
 ```
 
