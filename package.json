@@ -4,7 +4,8 @@
   "description": "Kindle Book Maker with KindleGen",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "run": "node index.js",
+    "reset": "rm -rf simple/toc.* simple/*.opf simple/*.mobi;"
   },
   "repository": {
     "type": "git",

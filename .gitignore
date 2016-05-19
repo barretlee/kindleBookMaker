@@ -1,3 +1,10 @@
+# repo
 node_modules/
 config.js
 *.mobi
+*.log
+
+
+# generate file
+simple/toc.*
+simple/*.opf
