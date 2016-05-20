@@ -3,6 +3,8 @@ Kindle Book Maker
 
 Kindle Book Maker with KindleGen, Make Book from RSS/single URL/directory and so on.
 
+![Kindle Book Maker](http://img.alicdn.com/tfs/TB1B_rJJVXXXXcvXXXXXXXXXXXX-809-584.png)
+
 **More Detail README doc coming soon (功能还不够完善，可以围观或者代码拿过去自己研究，会持续补充和优化)**
 
 ### Usage
