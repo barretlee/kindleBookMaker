@@ -1,9 +1,9 @@
 var moment = require('moment');
 
 module.exports = {
-  // entry: './src/KF8-Demo',
+  // entry: './src/demo',
   entry: {
-    base: './src/KF8-Demo',
+    base: './src/demo',
     list: []
   },
   /*option*/
