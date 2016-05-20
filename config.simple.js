@@ -1,15 +1,10 @@
 var moment = require('moment');
 
 module.exports = {
-  // entry: './src/demo',
+  // entry: './src/KF8-Demo',
   entry: {
-    base: './src/demo',
+    base: './src/KF8-Demo',
     list: []
-  },
-  /*option*/
-  output: {
-    base: './build',
-    format: '[name]-' + moment().format('YYYYMMDD')
   },
   bookInfo: {
     title: "Barret Lee's Personal Website",
@@ -18,6 +13,19 @@ module.exports = {
     copyright: "Barret Lee",
     publisher: "",
     coverImage: 'coverImage.png'
+  },
+  /*option*/
+  output: {
+    base: './build',
+    format: '[name]-' + moment().format('YYYYMMDD')
+  },
+  /*option for uri*/
+  singlePage: {
+    title: 'div.title',
+    description: 'div.content',
+    reg: function(data) {
+      return data.replace(/<div class="shit-spider"[\s\S]+?<\/div>/, '');
+    }
   },
   /*option*/
   push2kindle: {

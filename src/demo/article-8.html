@@ -2,40 +2,129 @@
 <html>
 <head>
   
-  <title>&#x5BF9;&#x7CFB;&#x7EDF;&#x94FE;&#x8DEF;&#x95EE;&#x9898;&#x6392;&#x67E5;&#x7684;&#x4E00;&#x4E9B;&#x770B;&#x6CD5;</title>
+  <title>&#x8C08;&#x8C08; HTTP/2 &#x7684;&#x534F;&#x8BAE;&#x534F;&#x5546;&#x673A;&#x5236;</title>
   
 </head>
 <body>
 
 <div id="wrap">
-  <h1>&#x5BF9;&#x7CFB;&#x7EDF;&#x94FE;&#x8DEF;&#x95EE;&#x9898;&#x6392;&#x67E5;&#x7684;&#x4E00;&#x4E9B;&#x770B;&#x6CD5;</h1>
-  <div id="content"><p>&#x9875;&#x9762;&#x4E0A;&#x53D1;&#x73B0;&#x51E0;&#x4E2A;&#x6A21;&#x5757;&#x5C55;&#x793A;&#x6BD4;&#x8F83;&#x7F13;&#x6162;&#xFF0C;&#x767D;&#x4E86;&#x5927;&#x7EA6; 5s &#x4E4B;&#x540E;&#x5C55;&#x793A;&#x515C;&#x5E95;&#xFF0C;&#x663E;&#x7136;&#xFF0C;&#x662F;&#x63A5;&#x53E3;&#x8BF7;&#x6C42;&#x8D85;&#x65F6;&#x4E86;&#xFF0C;&#x6253;&#x5F00;&#x63A7;&#x5236;&#x53F0;&#x4E00;&#x770B;&#xFF0C;&#x679C;&#x7136;&#xFF0C;&#x63A5;&#x53E3;&#x6302;&#x4E86;&#x3002;&#x770B;&#x4E86;&#x4E0B;&#x76F8;&#x5173;&#x9875;&#x9762;&#xFF0C;&#x56E0;&#x4E3A;&#x5927;&#x91CF;&#x7528;&#x5230;&#x8FD9;&#x4E2A;&#x63A5;&#x53E3;&#xFF0C;&#x6A21;&#x5757;&#x4E5F;&#x90FD;&#x52A0;&#x8F7D;&#x8D85;&#x65F6;&#x4E86;&#x3002;&#x6362;&#x4E00;&#x53F0;&#x7535;&#x8111;&#x770B;&#x4E86;&#x4E0B;&#xFF0C;&#x5B58;&#x5728;&#x4E00;&#x6837;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x786E;&#x8BA4;&#x662F;&#x63A5;&#x53E3;&#x6302;&#x4E86;&#x3002;</p>
-<a id="more"/>
-<p>10 min &#x5DE6;&#x53F3;&#x540E;&#x63A5;&#x53E3;&#x5374;&#x53C8;&#x6062;&#x590D;&#x6B63;&#x5E38;&#x3002;&#x4E8E;&#x662F;&#x51FA;&#x73B0;&#x4E0B;&#x9762;&#x7CFB;&#x5217;&#x6D41;&#x7A0B;&#xFF1A;</p>
+  <h1>&#x8C08;&#x8C08; HTTP/2 &#x7684;&#x534F;&#x8BAE;&#x534F;&#x5546;&#x673A;&#x5236;</h1>
+  <div id="content"><p>&#x5728;&#x8FC7;&#x53BB;&#x7684;&#x51E0;&#x4E2A;&#x6708;&#x91CC;&#xFF0C;&#x6211;&#x5199;&#x4E86;&#x5F88;&#x591A;&#x6709;&#x5173; HTTP/2 &#x7684;&#x6587;&#x7AE0;&#xFF0C;&#x4E5F;&#x505A;&#x8FC7;&#x597D;&#x51E0;&#x573A;&#x76F8;&#x5173;&#x5206;&#x4EAB;&#x3002;&#x6211;&#x5728;&#x5411;&#x5927;&#x5BB6;&#x4ECB;&#x7ECD; HTTP/2 &#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x6709;&#x4E00;&#x4E9B;&#x95EE;&#x9898;&#x7ECF;&#x5E38;&#x4F1A;&#x88AB;&#x95EE;&#x5230;&#x3002;&#x4F8B;&#x5982;&#x8981;&#x90E8;&#x7F72; HTTP/2 &#x4E00;&#x5B9A;&#x8981;&#x5148;&#x5347;&#x7EA7;&#x5230; HTTPS &#x4E48;&#xFF1F;&#x5347;&#x7EA7;&#x5230; HTTP/2 &#x4E4B;&#x540E;&#xFF0C;&#x4E0D;&#x652F;&#x6301; HTTP/2 &#x7684;&#x6D4F;&#x89C8;&#x5668;&#x8FD8;&#x80FD;&#x6B63;&#x5E38;&#x8BBF;&#x95EE;&#x4E48;&#xFF1F;&#x672C;&#x6587;&#x91CD;&#x70B9;&#x4ECB;&#x7ECD; HTTP/2 &#x7684;&#x534F;&#x5546;&#x673A;&#x5236;&#xFF0C;&#x660E;&#x767D;&#x4E86;&#x670D;&#x52A1;&#x7AEF;&#x548C;&#x5BA2;&#x6237;&#x7AEF;&#x5982;&#x4F55;&#x534F;&#x5546;&#x51FA;&#x6700;&#x7EC8;&#x4F7F;&#x7528;&#x7684; HTTP &#x534F;&#x8BAE;&#x7248;&#x672C;&#xFF0C;&#x8FD9;&#x4E24;&#x4E2A;&#x95EE;&#x9898;&#x5C31;&#x8FCE;&#x5203;&#x800C;&#x89E3;&#x4E86;&#x3002;</p>
+<h3 id="http-upgrade">HTTP Upgrade</h3>
+<p>&#x4E3A;&#x4E86;&#x66F4;&#x65B9;&#x4FBF;&#x5730;&#x90E8;&#x7F72;&#x65B0;&#x534F;&#x8BAE;&#xFF0C;HTTP/1.1 &#x5F15;&#x5165;&#x4E86; Upgrade &#x673A;&#x5236;&#xFF0C;&#x5B83;&#x4F7F;&#x5F97;&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x670D;&#x52A1;&#x7AEF;&#x4E4B;&#x95F4;&#x53EF;&#x4EE5;&#x501F;&#x52A9;&#x5DF2;&#x6709;&#x7684; HTTP &#x8BED;&#x6CD5;&#x5347;&#x7EA7;&#x5230;&#x5176;&#x5B83;&#x534F;&#x8BAE;&#x3002;&#x8FD9;&#x4E2A;&#x673A;&#x5236;&#x5728; RFC7230 &#x7684;&#x300C;<a href="http://httpwg.org/specs/rfc7230.html#header.upgrade">6.7 Upgrade</a>&#x300D;&#x8FD9;&#x4E00;&#x8282;&#x4E2D;&#x6709;&#x8BE6;&#x7EC6;&#x63CF;&#x8FF0;&#x3002;</p>
+<p>&#x8981;&#x53D1;&#x8D77; HTTP/1.1 &#x534F;&#x8BAE;&#x5347;&#x7EA7;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x5FC5;&#x987B;&#x5728;&#x8BF7;&#x6C42;&#x5934;&#x90E8;&#x4E2D;&#x6307;&#x5B9A;&#x8FD9;&#x4E24;&#x4E2A;&#x5B57;&#x6BB5;&#xFF1A;</p>
+<pre><code class="lang-http"><span class="hljs-attribute">Connection</span>: <span class="hljs-string">Upgrade</span>
+<span class="hljs-attribute">Upgrade</span>: <span class="hljs-string">protocol-name[/protocol-version]</span>
+</code></pre>
+<p>&#x5BA2;&#x6237;&#x7AEF;&#x901A;&#x8FC7; <code>Upgrade</code> &#x5934;&#x90E8;&#x5B57;&#x6BB5;&#x5217;&#x51FA;&#x6240;&#x5E0C;&#x671B;&#x5347;&#x7EA7;&#x5230;&#x7684;&#x534F;&#x8BAE;&#x548C;&#x7248;&#x672C;&#xFF0C;&#x591A;&#x4E2A;&#x534F;&#x8BAE;&#x4E4B;&#x95F4;&#x7528;&#x82F1;&#x6587;&#x9017;&#x53F7;&#x548C;&#x7A7A;&#x683C;&#xFF08;0x2C, 0x20&#xFF09;&#x9694;&#x5F00;&#x3002;&#x9664;&#x4E86;&#x8FD9;&#x4E24;&#x4E2A;&#x5B57;&#x6BB5;&#x4E4B;&#x5916;&#xFF0C;&#x4E00;&#x822C;&#x6BCF;&#x79CD;&#x65B0;&#x534F;&#x8BAE;&#x8FD8;&#x4F1A;&#x8981;&#x6C42;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x989D;&#x5916;&#x7684;&#x65B0;&#x5B57;&#x6BB5;&#xFF0C;&#x8FD9;&#x91CC;&#x7565;&#x8FC7;&#x4E0D;&#x5199;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x670D;&#x52A1;&#x7AEF;&#x4E0D;&#x540C;&#x610F;&#x5347;&#x7EA7;&#x6216;&#x8005;&#x4E0D;&#x652F;&#x6301; <code>Upgrade</code> &#x6240;&#x5217;&#x51FA;&#x7684;&#x534F;&#x8BAE;&#xFF0C;&#x76F4;&#x63A5;&#x5FFD;&#x7565;&#x5373;&#x53EF;&#xFF08;&#x5F53;&#x6210; HTTP/1.1 &#x8BF7;&#x6C42;&#xFF0C;&#x4EE5; HTTP/1.1 &#x54CD;&#x5E94;&#xFF09;&#xFF1B;&#x5982;&#x679C;&#x670D;&#x52A1;&#x7AEF;&#x540C;&#x610F;&#x5347;&#x7EA7;&#xFF0C;&#x90A3;&#x4E48;&#x9700;&#x8981;&#x8FD9;&#x6837;&#x54CD;&#x5E94;&#xFF1A;</p>
+<pre><code class="lang-http"><span class="hljs-status">HTTP/1.1 <span class="hljs-number">101</span> Switching Protocols</span>
+<span class="hljs-attribute">Connection</span>: <span class="hljs-string">upgrade</span>
+<span class="hljs-attribute">Upgrade</span>: <span class="hljs-string">protocol-name[/protocol-version]</span>
+
+<span class="lasso"><span class="hljs-preprocessor">[</span><span class="hljs-attribute">...</span> <span class="hljs-built_in">data</span> defined <span class="hljs-keyword">by</span> <span class="hljs-literal">new</span> protocol <span class="hljs-attribute">...</span><span class="hljs-preprocessor">]</span><span class="hljs-markup"></span></span>
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;HTTP Upgrade &#x54CD;&#x5E94;&#x7684;&#x72B6;&#x6001;&#x7801;&#x662F; <code>101</code>&#xFF0C;&#x5E76;&#x4E14;&#x54CD;&#x5E94;&#x6B63;&#x6587;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x65B0;&#x534F;&#x8BAE;&#x5B9A;&#x4E49;&#x7684;&#x6570;&#x636E;&#x683C;&#x5F0F;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5927;&#x5BB6;&#x4E4B;&#x524D;&#x4F7F;&#x7528;&#x8FC7; WebSocket&#xFF0C;&#x5E94;&#x8BE5;&#x5DF2;&#x7ECF;&#x5BF9; HTTP Upgrade &#x673A;&#x5236;&#x6709;&#x6240;&#x4E86;&#x89E3;&#x3002;&#x4E0B;&#x9762;&#x662F;&#x5EFA;&#x7ACB; WebSocket &#x8FDE;&#x63A5;&#x7684; HTTP &#x8BF7;&#x6C42;&#xFF1A;</p>
+<pre><code class="lang-http"><span class="hljs-request">GET <span class="hljs-string">ws://example.com/</span> HTTP/1.1</span>
+<span class="hljs-attribute">Connection</span>: <span class="hljs-string">Upgrade</span>
+<span class="hljs-attribute">Upgrade</span>: <span class="hljs-string">websocket</span>
+<span class="hljs-attribute">Origin</span>: <span class="hljs-string">http://example.com</span>
+<span class="hljs-attribute">Sec-WebSocket-Version</span>: <span class="hljs-string">13</span>
+<span class="hljs-attribute">Sec-WebSocket-Key</span>: <span class="hljs-string">d4egt7snxxxxxx2WcaMQlA==</span>
+<span class="hljs-attribute">Sec-WebSocket-Extensions</span>: <span class="hljs-string">permessage-deflate; client_max_window_bits</span>
+</code></pre>
+<p>&#x8FD9;&#x662F;&#x670D;&#x52A1;&#x7AEF;&#x540C;&#x610F;&#x5347;&#x7EA7;&#x7684; HTTP &#x54CD;&#x5E94;&#xFF1A;</p>
+<pre><code class="lang-http"><span class="hljs-status">HTTP/1.1 <span class="hljs-number">101</span> Switching Protocols</span>
+<span class="hljs-attribute">Connection</span>: <span class="hljs-string">Upgrade</span>
+<span class="hljs-attribute">Upgrade</span>: <span class="hljs-string">websocket</span>
+<span class="hljs-attribute">Sec-WebSocket-Accept</span>: <span class="hljs-string">gczJQPmQ4Ixxxxxx6pZO8U7UbZs=</span>
+</code></pre>
+<p>&#x5728;&#x8FD9;&#x4E4B;&#x540E;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x670D;&#x52A1;&#x7AEF;&#x4E4B;&#x95F4;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; WebSocket &#x534F;&#x8BAE;&#x8FDB;&#x884C;&#x53CC;&#x5411;&#x6570;&#x636E;&#x901A;&#x8BAF;&#xFF0C;&#x8DDF; HTTP/1.1 &#x6CA1;&#x5173;&#x7CFB;&#x4E86;&#x3002;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;WebSocket &#x8FDE;&#x63A5;&#x7684;&#x5EFA;&#x7ACB;&#x5C31;&#x662F;&#x5178;&#x578B;&#x7684; HTTP Upgrade &#x673A;&#x5236;&#x3002;</p>
+<p>&#x663E;&#x7136;&#xFF0C;&#x8FD9;&#x4E2A;&#x673A;&#x5236;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x505A; HTTP/1.1 &#x5230; HTTP/2 &#x7684;&#x534F;&#x8BAE;&#x5347;&#x7EA7;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-http"><span class="hljs-request">GET <span class="hljs-string">/</span> HTTP/1.1</span>
+<span class="hljs-attribute">Host</span>: <span class="hljs-string">example.com</span>
+<span class="hljs-attribute">Connection</span>: <span class="hljs-string">Upgrade, HTTP2-Settings</span>
+<span class="hljs-attribute">Upgrade</span>: <span class="hljs-string">h2c</span>
+<span class="hljs-attribute">HTTP2-Settings</span>: <span class="hljs-string">&lt;base64url encoding of HTTP/2 SETTINGS payload&gt;</span>
+</code></pre>
+<p>&#x5728; HTTP Upgrade &#x673A;&#x5236;&#x4E2D;&#xFF0C;HTTP/2 &#x7684;&#x534F;&#x8BAE;&#x540D;&#x79F0;&#x662F; <code>h2c</code>&#xFF0C;&#x4EE3;&#x8868; HTTP/2 ClearText&#x3002;&#x5982;&#x679C;&#x670D;&#x52A1;&#x7AEF;&#x4E0D;&#x652F;&#x6301; HTTP/2&#xFF0C;&#x5B83;&#x4F1A;&#x5FFD;&#x7565; <code>Upgrade</code> &#x5B57;&#x6BB5;&#xFF0C;&#x76F4;&#x63A5;&#x8FD4;&#x56DE; HTTP/1.1 &#x54CD;&#x5E94;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-http"><span class="hljs-status">HTTP/1.1 <span class="hljs-number">200</span> OK</span>
+<span class="hljs-attribute">Content-Length</span>: <span class="hljs-string">243</span>
+<span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">text/html</span>
+
+<span class="erlang">...</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x670D;&#x52A1;&#x7AEF;&#x652F;&#x6301; HTTP/2&#xFF0C;&#x90A3;&#x5C31;&#x53EF;&#x4EE5;&#x56DE;&#x5E94; <code>101</code> &#x72B6;&#x6001;&#x7801;&#x53CA;&#x5BF9;&#x5E94;&#x5934;&#x90E8;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x54CD;&#x5E94;&#x6B63;&#x6587;&#x4E2D;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528; HTTP/2 &#x4E8C;&#x8FDB;&#x5236;&#x5E27;&#xFF1A; </p>
+<pre><code class="lang-http"><span class="hljs-status">HTTP/1.1 <span class="hljs-number">101</span> Switching Protocols</span>
+<span class="hljs-attribute">Connection</span>: <span class="hljs-string">Upgrade</span>
+<span class="hljs-attribute">Upgrade</span>: <span class="hljs-string">h2c</span>
+
+<span class="json">[ HTTP/<span class="hljs-number">2</span> connection ... ]</span>
+</code></pre>
+<p>&#x4EE5;&#x4E0B;&#x662F;&#x901A;&#x8FC7; HTTP Upgrade &#x673A;&#x5236;&#x5C06; HTTP/1.1 &#x5347;&#x7EA7;&#x5230; HTTP/2 &#x7684; Wireshark &#x6293;&#x5305;&#xFF08;&#x4E24;&#x5F20;&#x56FE;&#x53EF;&#x4EE5;&#x5BF9;&#x7167;&#x6765;&#x770B;&#xFF09;&#xFF1A;</p>
+<p><img alt="h2c_upgrade_success_wireshark" src="https://st.imququ.com/static/uploads/2016/04/h2c_upgrade_success_wireshark.png" itemprop="image" width="750" height="482"></p>
+<p><img alt="h2c_upgrade_success" src="https://st.imququ.com/static/uploads/2016/04/h2c_upgrade_success.png" itemprop="image" width="750" height="596"></p>
+<p>&#x6839;&#x636E; HTTP/2 &#x534F;&#x8BAE;&#x4E2D;&#x7684;&#x63CF;&#x8FF0;&#xFF0C;&#x989D;&#x5916;&#x8865;&#x5145;&#x51E0;&#x70B9;&#xFF1A;</p>
 <ul>
-<li>&#x8054;&#x7CFB;&#x76F8;&#x5E94;&#x7684;&#x540C;&#x5B66;&#xFF0C;&#x6700;&#x540E;&#x627E;&#x5230;&#x80FD;&#x6392;&#x67E5;&#x95EE;&#x9898;&#x7684;&#x4EBA;&#x3002;</li>
-<li>&#x67E5;&#x770B;&#x76D1;&#x63A7;&#x5E73;&#x53F0;&#xFF0C;&#x53D1;&#x73B0;&#x786E;&#x5B9E;&#x6CA1;&#x6709;&#x6570;&#x636E;&#x8FC7;&#x6765;&#x3002;</li>
-<li>&#x67E5;&#x770B;&#x670D;&#x52A1;&#x5668;&#x65E5;&#x5FD7;&#xFF0C;&#x53D1;&#x73B0;&#x786E;&#x5B9E;&#x6CA1;&#x6709;&#x65E5;&#x5FD7;&#x8FDB;&#x6765;&#xFF0C;&#x786E;&#x8BA4;&#x76D1;&#x63A7;&#x6570;&#x636E;&#x672A;&#x51FA;&#x9519;&#x3002;</li>
-<li>&#x7ED3;&#x8BBA;&#x662F;&#x5E73;&#x53F0;&#x65E0;&#x9519;&#x8BEF;&#x3002;</li>
+<li>41 &#x53F7;&#x5305;&#x4E2D;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x8D77;&#x7684;&#x534F;&#x8BAE;&#x5347;&#x7EA7;&#x8BF7;&#x6C42;&#x4E2D;&#xFF0C;&#x5FC5;&#x987B;&#x901A;&#x8FC7; <code>HTTP2-Settings</code> &#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x7ECF;&#x8FC7; Base64 &#x7F16;&#x7801;&#x8FC7;&#x7684; HTTP/2 SETTINGS &#x5E27;&#xFF1B;</li>
+<li>45 &#x53F7;&#x5305;&#x4E2D;&#xFF0C;&#x670D;&#x52A1;&#x7AEF;&#x540C;&#x610F;&#x534F;&#x8BAE;&#x5347;&#x7EA7;&#xFF0C;&#x54CD;&#x5E94;&#x6B63;&#x6587;&#x4E2D;&#x5FC5;&#x987B;&#x5305;&#x542B; HTTP/2 SETTING &#x5E27;&#xFF08;&#x4E8C;&#x8FDB;&#x5236;&#x683C;&#x5F0F;&#xFF0C;&#x4E0D;&#x9700;&#x8981; Base64 &#x7F16;&#x7801;&#xFF09;&#xFF1B;</li>
+<li>62 &#x53F7;&#x5305;&#x4E2D;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x53EF;&#x4EE5;&#x5F00;&#x59CB;&#x53D1;&#x9001;&#x5404;&#x79CD; HTTP/2 &#x5E27;&#xFF0C;&#x4F46;&#x7B2C;&#x4E00;&#x4E2A;&#x5E27;&#x5FC5;&#x987B;&#x662F; Magic &#x5E27;&#xFF08;&#x5185;&#x5BB9;&#x56FA;&#x5B9A;&#x4E3A; PRI * HTTP/2.0\r\n\r\nSM\r\n\r\n&#xFF09;&#xFF0C;&#x505A;&#x4E3A;&#x534F;&#x8BAE;&#x5347;&#x7EA7;&#x7684;&#x6700;&#x7EC8;&#x786E;&#x8BA4;&#xFF1B;</li>
 </ul>
-<p>&#x7EE7;&#x7EED;&#x6EAF;&#x6E90;&#xFF0C;</p>
+<p>HTTP Upgrade &#x673A;&#x5236;&#x672C;&#x8EAB;&#x6CA1;&#x4EC0;&#x4E48;&#x95EE;&#x9898;&#xFF0C;&#x4F46;&#x5F88;&#x5BB9;&#x6613;&#x53D7;&#x7F51;&#x7EDC;&#x4E2D;&#x95F4;&#x73AF;&#x8282;&#x5F71;&#x54CD;&#x3002;&#x4F8B;&#x5982;&#x4E0D;&#x80FD;&#x6B63;&#x786E;&#x5904;&#x7406; <code>Upgrade</code> &#x5934;&#x90E8;&#x7684;&#x4EE3;&#x7406;&#x8282;&#x70B9;&#xFF0C;&#x5F88;&#x53EF;&#x80FD;&#x9020;&#x6210;&#x6700;&#x7EC8;&#x5347;&#x7EA7;&#x5931;&#x8D25;&#x3002;&#x4E4B;&#x524D;&#x6211;&#x4EEC;&#x7EDF;&#x8BA1;&#x8FC7; WebSocket &#x7684;&#x8FDE;&#x901A;&#x60C5;&#x51B5;&#xFF0C;&#x53D1;&#x73B0;&#x5927;&#x91CF;&#x660E;&#x660E;&#x652F;&#x6301; WebSocket &#x7684;&#x6D4F;&#x89C8;&#x5668;&#x5374;&#x65E0;&#x6CD5;&#x5347;&#x7EA7;&#xFF0C;&#x53EA;&#x80FD;&#x4F7F;&#x7528;&#x964D;&#x7EA7;&#x65B9;&#x6848;&#x3002;</p>
+<h3 id="alpn-">ALPN &#x6269;&#x5C55;</h3>
+<p>HTTP/2 &#x534F;&#x8BAE;&#x672C;&#x8EAB;&#x5E76;&#x6CA1;&#x6709;&#x8981;&#x6C42;&#x5B83;&#x5FC5;&#x987B;&#x57FA;&#x4E8E; HTTPS&#xFF08;TLS&#xFF09;&#x90E8;&#x7F72;&#xFF0C;&#x4F46;&#x662F;&#x51FA;&#x4E8E;&#x4EE5;&#x4E0B;&#x4E09;&#x4E2A;&#x539F;&#x56E0;&#xFF0C;&#x5B9E;&#x9645;&#x4F7F;&#x7528;&#x4E2D;&#xFF0C;HTTP/2 &#x548C; HTTPS &#x51E0;&#x4E4E;&#x90FD;&#x662F;&#x6346;&#x7ED1;&#x5728;&#x4E00;&#x8D77;&#xFF1A;</p>
 <ul>
-<li>&#x5E73;&#x53F0;&#x4E0A;&#x4E00;&#x5C42;&#x662F;&#x7EDF;&#x4E00;&#x63A5;&#x5165;&#xFF0C;&#x67E5;&#x770B; lvs&#xFF0C;&#x53D1;&#x73B0;&#x6CA1;&#x6709;&#x6D41;&#x91CF;&#x8FDB;&#x6765;</li>
-<li>&#x67E5;&#x770B;&#x673A;&#x5668;&#x7CFB;&#x7EDF;&#x65E5;&#x5FD7;&#xFF0C;lvs &#x6709;&#x4EBA;&#x5728;&#x8C03;&#x8BD5;</li>
+<li>HTTP &#x6570;&#x636E;&#x660E;&#x6587;&#x4F20;&#x8F93;&#xFF0C;&#x6570;&#x636E;&#x5F88;&#x5BB9;&#x6613;&#x88AB;&#x4E2D;&#x95F4;&#x8282;&#x70B9;&#x7AA5;&#x89C6;&#x6216;&#x7BE1;&#x6539;&#xFF0C;HTTPS &#x53EF;&#x4EE5;&#x4FDD;&#x8BC1;&#x6570;&#x636E;&#x4F20;&#x8F93;&#x7684;&#x4FDD;&#x5BC6;&#x6027;&#x3001;&#x5B8C;&#x6574;&#x6027;&#x548C;&#x4E0D;&#x88AB;&#x5192;&#x5145;&#xFF1B;</li>
+<li>&#x6B63;&#x56E0;&#x4E3A; HTTPS &#x4F20;&#x8F93;&#x7684;&#x6570;&#x636E;&#x5BF9;&#x4E2D;&#x95F4;&#x8282;&#x70B9;&#x4FDD;&#x5BC6;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x5177;&#x6709;&#x66F4;&#x597D;&#x7684;&#x8FDE;&#x901A;&#x6027;&#x3002;&#x57FA;&#x4E8E; HTTPS &#x90E8;&#x7F72;&#x7684;&#x65B0;&#x534F;&#x8BAE;&#x5177;&#x6709;&#x66F4;&#x9AD8;&#x7684;&#x8FDE;&#x63A5;&#x6210;&#x529F;&#x7387;&#xFF1B;</li>
+<li>&#x5F53;&#x524D;&#x4E3B;&#x6D41;&#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x90FD;&#x53EA;&#x652F;&#x6301;&#x57FA;&#x4E8E; HTTPS &#x90E8;&#x7F72;&#x7684; HTTP/2&#xFF1B;</li>
 </ul>
-<p>&#x5F53;&#x7136;&#xFF0C;&#x95EE;&#x9898;&#x5728;&#x8FD9;&#x91CC;&#x5DF2;&#x7ECF;&#x627E;&#x5230;&#x4E86;&#x3002;&#x5982;&#x679C;&#x8FD9;&#x4E00;&#x6B65;&#x8FD8;&#x6CA1;&#x6709;&#x627E;&#x5230;&#xFF0C;&#x5C31;&#x9700;&#x8981;&#x7EE7;&#x7EED;&#x6EAF;&#x6E90;&#xFF0C;&#x770B;&#x770B;&#x57DF;&#x540D;&#x89E3;&#x6790;&#x662F;&#x5426;&#x6709;&#x95EE;&#x9898;&#xFF0C;DNS &#x89E3;&#x6790;&#x662F;&#x5426;&#x6709;&#x95EE;&#x9898;&#x4E86;&#x3002;</p>
-<h3 id="&#x81EA;&#x52A8;&#x5316;&#x7684;&#x68C0;&#x6D4B;">&#x81EA;&#x52A8;&#x5316;&#x7684;&#x68C0;&#x6D4B;</h3><p>&#x5F53;&#x7528;&#x6237;&#x53D1;&#x73B0;&#x7F51;&#x9875;&#x6A21;&#x5757;&#x8D85;&#x65F6;&#x52A0;&#x8F7D;&#x540E;&#xFF0C;</p>
-<ul>
-<li>&#x524D;&#x7AEF;&#x7CFB;&#x7EDF;&#x8B66;&#x62A5;</li>
-<li>&#x89E6;&#x53D1;&#x5BF9;&#x5E94;&#x63A5;&#x53E3;&#x7684;&#x94FE;&#x8DEF;&#x67E5;&#x8BE2;</li>
-<li>&#x68C0;&#x67E5; DNS &#x89E3;&#x6790;&#x662F;&#x5426;&#x6B63;&#x5E38;</li>
-<li>&#x68C0;&#x67E5;&#x8BC1;&#x4E66;&#x662F;&#x5426;&#x8FC7;&#x671F;&#xFF0C;&#x662F;&#x5426;&#x6B63;&#x786E;&#x90E8;&#x7F72;</li>
-<li>&#x68C0;&#x67E5;&#x7EDF;&#x4E00;&#x63A5;&#x5165;&#x5C42;&#x662F;&#x5426;&#x6709;&#x6D41;&#x91CF;&#x5F02;&#x5E38;</li>
-<li>&#x68C0;&#x67E5;&#x5E73;&#x53F0;&#x76D1;&#x63A7;&#x6570;&#x636E;&#x662F;&#x5426;&#x5F02;&#x5E38;</li>
-<li>&#x68C0;&#x67E5;&#x670D;&#x52A1;&#x5668;&#x65E5;&#x5FD7;&#x662F;&#x5426;&#x5F02;&#x5E38;</li>
-<li>&#x68C0;&#x67E5;&#x7A0B;&#x5E8F;&#x662F;&#x5426;&#x62A5;&#x9519;</li>
-</ul>
-<p>&#x800C;&#x8FD9;&#x6761;&#x94FE;&#x8DEF;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x5E73;&#x65F6;&#x6B63;&#x5411;&#x5192;&#x70DF;&#x6D4B;&#x8BD5;&#xFF0C;&#x5B9A;&#x671F;&#x68C0;&#x67E5;&#x662F;&#x5426;&#x5B58;&#x5728;&#x95EE;&#x9898;&#xFF0C;&#x63D0;&#x65E9;&#x53D1;&#x73B0;&#x95EE;&#x9898;&#xFF0C;&#x8FD9;&#x6837;&#x624D;&#x80FD;&#x53D1;&#x6325;&#x76D1;&#x63A7;&#x7684;&#x4EF7;&#x503C;&#x3002;</p></div>
+<p>&#x5982;&#x679C;&#x524D;&#x9762;&#x4E24;&#x4E2A;&#x539F;&#x56E0;&#x8FD8;&#x4E0D;&#x8DB3;&#x4EE5;&#x8BF4;&#x670D;&#x4F60;&#xFF0C;&#x6700;&#x540E;&#x8FD9;&#x4E2A;&#x7EDD;&#x5BF9;&#x6709;&#x8BF4;&#x670D;&#x529B;&#xFF0C;&#x9664;&#x975E;&#x4F60;&#x7684; HTTP/2 &#x670D;&#x52A1;&#x53EA;&#x6253;&#x7B97;&#x7ED9;&#x81EA;&#x5DF1;&#x5BA2;&#x6237;&#x7AEF;&#x7528;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x4ECB;&#x7ECD;&#x5728; HTTPS &#x4E2D;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x548C;&#x670D;&#x52A1;&#x7AEF;&#x4E4B;&#x95F4;&#x600E;&#x6837;&#x534F;&#x5546;&#x662F;&#x5426;&#x4F7F;&#x7528; HTTP/2&#x3002;</p>
+<p>&#x57FA;&#x4E8E; HTTPS &#x7684;&#x534F;&#x8BAE;&#x534F;&#x5546;&#x975E;&#x5E38;&#x7B80;&#x5355;&#xFF0C;&#x591A;&#x4E86; TLS &#x4E4B;&#x540E;&#xFF0C;&#x53CC;&#x65B9;&#x5FC5;&#x987B;&#x7B49;&#x5230;&#x6210;&#x529F;&#x5EFA;&#x7ACB; TLS &#x8FDE;&#x63A5;&#x4E4B;&#x540E;&#x624D;&#x80FD;&#x53D1;&#x9001;&#x5E94;&#x7528;&#x6570;&#x636E;&#x3002;&#x800C;&#x8981;&#x5EFA;&#x7ACB; TLS &#x8FDE;&#x63A5;&#xFF0C;&#x672C;&#x6765;&#x5C31;&#x8981;&#x8FDB;&#x884C; CipherSuite &#x7B49;&#x53C2;&#x6570;&#x7684;&#x534F;&#x5546;&#x3002;&#x5F15;&#x5165; HTTP/2 &#x4E4B;&#x540E;&#xFF0C;&#x9700;&#x8981;&#x505A;&#x7684;&#x53EA;&#x662F;&#x5728;&#x539F;&#x672C;&#x7684;&#x534F;&#x5546;&#x673A;&#x5236;&#x4E2D;&#x628A;&#x5BF9; HTTP &#x534F;&#x8BAE;&#x7684;&#x534F;&#x5546;&#x52A0;&#x8FDB;&#x53BB;&#x3002;</p>
+<p>Google &#x5728; SPDY &#x534F;&#x8BAE;&#x4E2D;&#x5F00;&#x53D1;&#x4E86;&#x4E00;&#x4E2A;&#x540D;&#x4E3A; NPN&#xFF08;Next Protocol Negotiation&#xFF0C;&#x4E0B;&#x4E00;&#x4EE3;&#x534F;&#x8BAE;&#x534F;&#x5546;&#xFF09;&#x7684; TLS &#x6269;&#x5C55;&#x3002;&#x968F;&#x7740; SPDY &#x88AB; HTTP/2 &#x53D6;&#x4EE3;&#xFF0C;NPN &#x4E5F;&#x88AB;&#x5B98;&#x65B9;&#x4FEE;&#x8BA2;&#x4E3A; ALPN&#xFF08;Application Layer Protocol Negotiation&#xFF0C;&#x5E94;&#x7528;&#x5C42;&#x534F;&#x8BAE;&#x534F;&#x5546;&#xFF09;&#x3002;&#x4E8C;&#x8005;&#x7684;&#x76EE;&#x6807;&#x548C;&#x5B9E;&#x73B0;&#x539F;&#x7406;&#x57FA;&#x672C;&#x4E00;&#x81F4;&#xFF0C;&#x8FD9;&#x91CC;&#x53EA;&#x4ECB;&#x7ECD;&#x540E;&#x8005;&#x3002;&#x5982;&#x56FE;&#xFF1A;</p>
+<p><img alt="h2_tls_alpn_client" src="https://st.imququ.com/static/uploads/2016/04/h2_tls_alpn_client.png" itemprop="image" width="750" height="482"></p>
+<p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x5728;&#x5EFA;&#x7ACB; TLS &#x8FDE;&#x63A5;&#x7684; Client Hello &#x63E1;&#x624B;&#x4E2D;&#xFF0C;&#x901A;&#x8FC7; ALPN &#x6269;&#x5C55;&#x5217;&#x51FA;&#x4E86;&#x81EA;&#x5DF1;&#x652F;&#x6301;&#x7684;&#x5404;&#x79CD;&#x5E94;&#x7528;&#x5C42;&#x534F;&#x8BAE;&#x3002;&#x5176;&#x4E2D;&#xFF0C;HTTP/2 &#x534F;&#x8BAE;&#x540D;&#x79F0;&#x662F; <code>h2</code>&#x3002;</p>
+<p><img alt="h2_tls_alpn_server" src="https://st.imququ.com/static/uploads/2016/04/h2_tls_alpn_server.png" itemprop="image" width="750" height="482"></p>
+<p>&#x5982;&#x679C;&#x670D;&#x52A1;&#x7AEF;&#x652F;&#x6301; HTTP/2&#xFF0C;&#x5728; Server Hello &#x4E2D;&#x6307;&#x5B9A; ALPN &#x7684;&#x7ED3;&#x679C;&#x4E3A; <code>h2</code> &#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#xFF1B;&#x5982;&#x679C;&#x670D;&#x52A1;&#x7AEF;&#x4E0D;&#x652F;&#x6301; HTTP/2&#xFF0C;&#x4ECE;&#x5BA2;&#x6237;&#x7AEF;&#x7684; ALPN &#x5217;&#x8868;&#x4E2D;&#x9009;&#x4E00;&#x4E2A;&#x81EA;&#x5DF1;&#x652F;&#x6301;&#x7684;&#x5373;&#x53EF;&#x3002;</p>
+<p>&#x5E76;&#x4E0D;&#x662F;&#x6240;&#x6709; HTTP/2 &#x5BA2;&#x6237;&#x7AEF;&#x90FD;&#x652F;&#x6301; ALPN&#xFF0C;&#x7406;&#x8BBA;&#x4E0A;&#x5EFA;&#x7ACB; TLS &#x8FDE;&#x63A5;&#x540E;&#xFF0C;&#x4F9D;&#x7136;&#x53EF;&#x4EE5;&#x518D;&#x901A;&#x8FC7; HTTP Upgrade &#x8FDB;&#x884C;&#x534F;&#x8BAE;&#x5347;&#x7EA7;&#xFF0C;&#x53EA;&#x662F;&#x8FD9;&#x6837;&#x4F1A;&#x989D;&#x5916;&#x5F15;&#x5165;&#x4E00;&#x6B21;&#x5F80;&#x8FD4;&#x3002;</p>
+<h3 id="-">&#x5C0F;&#x7ED3;</h3>
+<p>&#x770B;&#x5230;&#x8FD9;&#x91CC;&#xFF0C;&#x76F8;&#x4FE1;&#x4F60;&#x4E00;&#x5B9A;&#x53EF;&#x4EE5;&#x5F88;&#x597D;&#x5730;&#x56DE;&#x7B54;&#x672C;&#x6587;&#x5F00;&#x5934;&#x63D0;&#x51FA;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+<p>HTTP/2 &#x9700;&#x8981;&#x57FA;&#x4E8E; HTTPS &#x90E8;&#x7F72;&#x662F;&#x5F53;&#x524D;&#x4E3B;&#x6D41;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x8981;&#x6C42;&#x3002;&#x5982;&#x679C;&#x4F60;&#x7684; HTTP/2 &#x670D;&#x52A1;&#x8981;&#x652F;&#x6301;&#x6D4F;&#x89C8;&#x5668;&#x8BBF;&#x95EE;&#xFF0C;&#x90A3;&#x5C31;&#x5FC5;&#x987B;&#x57FA;&#x4E8E; HTTPS &#x90E8;&#x7F72;&#xFF1B;&#x5982;&#x679C;&#x53EA;&#x7ED9;&#x81EA;&#x5DF1;&#x5BA2;&#x6237;&#x7AEF;&#x7528;&#xFF0C;&#x53EF;&#x4EE5;&#x4E0D;&#x90E8;&#x7F72; HTTPS&#xFF08;<a href="https://github.com/http2/http2-spec/wiki/Implementations">&#x8FD9;&#x4E2A;&#x9875;&#x9762;</a>&#x5217;&#x4E3E;&#x4E86;&#x5F88;&#x591A;&#x652F;&#x6301; <code>h2c</code> &#x7684; HTTP/2 &#x670D;&#x52A1;&#x7AEF;&#x3001;&#x5BA2;&#x6237;&#x7AEF;&#x5B9E;&#x73B0;&#xFF09;&#x3002;</p>
+<p>&#x652F;&#x6301; HTTP/2 &#x7684; Web Server &#x57FA;&#x672C;&#x90FD;&#x652F;&#x6301; HTTP/1.1&#x3002;&#x8FD9;&#x6837;&#xFF0C;&#x5373;&#x4F7F;&#x6D4F;&#x89C8;&#x5668;&#x4E0D;&#x652F;&#x6301; HTTP/2&#xFF0C;&#x53CC;&#x65B9;&#x4E5F;&#x53EF;&#x4EE5;&#x534F;&#x5546;&#x51FA;&#x53EF;&#x7528;&#x7684; HTTP &#x7248;&#x672C;&#xFF0C;&#x6CA1;&#x6709;&#x517C;&#x5BB9;&#x6027;&#x95EE;&#x9898;&#x3002;&#x5982;&#x4E0B;&#x8868;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x6D4F;&#x89C8;&#x5668;</th>
+<th>&#x670D;&#x52A1;&#x5668;</th>
+<th>&#x534F;&#x5546;&#x7ED3;&#x679C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x4E0D;&#x652F;&#x6301; HTTP/2</td>
+<td>&#x4E0D;&#x652F;&#x6301; HTTP/2</td>
+<td>&#x4E0D;&#x534F;&#x5546;&#xFF0C;&#x4F7F;&#x7528; HTTP/1.1</td>
+</tr>
+<tr>
+<td>&#x4E0D;&#x652F;&#x6301; HTTP/2</td>
+<td>&#x652F;&#x6301; HTTP/2</td>
+<td>&#x4E0D;&#x534F;&#x5546;&#xFF0C;&#x4F7F;&#x7528; HTTP/1.1</td>
+</tr>
+<tr>
+<td>&#x652F;&#x6301; HTTP/2</td>
+<td>&#x4E0D;&#x652F;&#x6301; HTTP/2</td>
+<td>&#x534F;&#x5546;&#xFF0C;&#x4F7F;&#x7528; HTTP/1.1</td>
+</tr>
+<tr>
+<td>&#x652F;&#x6301; HTTP/2</td>
+<td>&#x652F;&#x6301; HTTP/2</td>
+<td>&#x534F;&#x5546;&#xFF0C;&#x4F7F;&#x7528; HTTP/2</td>
+</tr>
+</tbody>
+</table>
+<p>&#x5F53;&#x7136;&#xFF0C;&#x672C;&#x6587;&#x8BA8;&#x8BBA;&#x7684;&#x662F;&#x901A;&#x7528;&#x60C5;&#x51B5;&#x3002;&#x5BF9;&#x4E8E;&#x81EA;&#x5DF1;&#x5B9E;&#x73B0;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x670D;&#x52A1;&#x7AEF;&#xFF0C;&#x5982;&#x679C;&#x6253;&#x7B97;&#x4F7F;&#x7528; HTTP/2 ClearText&#xFF0C;&#x7531;&#x4E8E; HTTP Upgrade &#x534F;&#x5546;&#x4F1A;&#x589E;&#x52A0;&#x4E00;&#x6B21;&#x5F80;&#x8FD4;&#xFF0C;&#x53EF;&#x4EE5;&#x8981;&#x6C42;&#x53CC;&#x65B9;&#x5FC5;&#x987B;&#x652F;&#x6301; HTTP/2&#xFF0C;&#x76F4;&#x63A5;&#x53D1;&#x9001; HTTP/2 &#x6570;&#x636E;&#xFF0C;&#x4E0D;&#x8D70;&#x534F;&#x5546;&#x3002;</p>
+<p>&#x672C;&#x6587;&#x94FE;&#x63A5;&#xFF1A;<a href="https://imququ.com/post/protocol-negotiation-in-http2.html">https://imququ.com/post/protocol-negotiation-in-http2.html</a>&#xFF0C;<a href="https://imququ.com/post/protocol-negotiation-in-http2.html#comments" target="_blank">&#x53C2;&#x4E0E;&#x8BA8;&#x8BBA;</a></p><p>&#x2665; &#x672C;&#x7AD9;&#x6240;&#x6709;&#x6587;&#x7AE0;&#x5747;&#x4E3A;&#x672C;&#x4EBA;&#x539F;&#x521B;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x8BA4;&#x4E3A;&#x6211;&#x7684;&#x6587;&#x7AE0;&#x5BF9;&#x4F60;&#x6709;&#x5E2E;&#x52A9;&#xFF0C;&#x6B22;&#x8FCE;&#x8D5E;&#x52A9;&#x672C;&#x7AD9;&#x3002;<a target="_blank" href="https://imququ.com/post/about.html#toc-2">&#x8BE6;&#x60C5;&#x8BF7;&#x70B9;&#x8FD9;&#x91CC; &#xBB;</a></p></div>
 </div>
 
 </body>

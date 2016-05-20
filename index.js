@@ -13,6 +13,11 @@ var log = new Log({
   color: true
 });
 var cli = commandLineArgs([{
+  name: 'help',
+  alias: 'h',
+  type: Boolean,
+  description: 'help'
+}, {
   name: 'verbose',
   alias: 'v',
   type: Boolean,
@@ -22,7 +27,7 @@ var cli = commandLineArgs([{
   alias: 'u',
   type: String,
   multiple: true,
-  description: '`url titleClass ConentClass`, eg: -u http://www.barretlee.com/blog/2016/04/28/javascript-performance-tester/ .post-title .post-content'
+  description: '`url titleClass ConentClass RegExp`, eg: -u http://www.barretlee.com/blog/2016/04/28/javascript-performance-tester/ .post-title .post-content /<(link|meta)[^>]+?>/g'
 }, {
   name: 'rss',
   alias: 'r',
@@ -42,6 +47,10 @@ var cli = commandLineArgs([{
 var options = cli.parse();
 
 ~ function start() {
+  if(options.help) {
+    console.log(cli.getUsage());
+    process.exit(0);
+  }
   if (!options.uri && !options.rss && !options.directory) {
     bookGenerator.init(options.verbose, options.push2kindle);
   }
@@ -59,8 +68,21 @@ var options = cli.parse();
   }
   // single page uri detect
   if (options.uri) {
+    if([1, 3, 4].indexOf(options.uri.length) === -1) {
+      console.log(cli.getUsage());
+      process.exit(0);
+    }
     cfg.singlePage = cfg.singlePage || {};
-    cfg.singlePage.uri = options.uri;
+    cfg.singlePage.uri = options.uri[0];
+    if(options.uri.length >= 3) {
+      cfg.singlePage.query = {
+        title: options.uri[1],
+        description: options.uri[2]
+      };
+    }
+    if(options.uri[3]) {
+      cfg.singlePage.query.reg = new Function('data', 'return data.replace(' + options.uri[3] + ', "");');
+    }
     var query = cfg.singlePage.query || {};
     if(!query.title || !query.description) {
       log.error('`config.js` err: `singlePage.query.title` and `singlePage.query.description` are required.');

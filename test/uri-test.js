@@ -1,3 +1,5 @@
+var util = require('../lib/util');
+var log = util.log;
 var load = require('../lib/uri-spider');
 
 load('http://www.barretlee.com/blog/2016/04/28/javascript-performance-tester/', {
@@ -9,5 +11,5 @@ load('http://www.barretlee.com/blog/2016/04/28/javascript-performance-tester/', 
 }).then(function(data){
   console.log(data);
 }).catch(function(err){
-  console.log(err);
+  log.info(err);
 });

@@ -1,9 +1,13 @@
+var util = require('../lib/util');
+var log = util.log;
 var rssLoader = require('../lib/rss-spider');
-// var extract = require('../lib/extract');
 
 // http://www.barretlee.com/rss2.xml
 rssLoader('https://imququ.com/rss.html').then(function(data){
-  console.log(data[0]);
+  console.log({
+    title: data[0].title,
+    description: data[0].description
+  });
 }).catch(function(err){
-  console.log(err);
+  log.info(err);
 });
