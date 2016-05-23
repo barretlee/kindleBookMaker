@@ -3,7 +3,7 @@ Kindle 电子书生成工具
 
 [English Document](./README.md)
 
-**注意：** 项目中提供的 [/bin/kindlegen](/bin/kindlegen) 文件只适用于 Mac 系统，如果您使用的时候 windows，需要在这里下载对应的 [kindleGen](http://www.amazon.com/gp/feature.html?docId=1000765211)，并替换本项目中的文件。
+**注意：** 项目中提供的 [/bin/kindlegen](/bin/kindlegen) 文件只适用于 Mac 系统，如果您使用的是 windows，需要在这里下载对应的 [kindleGen](http://www.amazon.com/gp/feature.html?docId=1000765211)，并替换本项目中的文件。
 
 > 花了两个晚上把 OPF 和 epub 格式整明白了，准备把订阅的 RSS 内容抓取下来做成电子书推到 kindle 中阅读。后续也会把自己博客整成电子书，提供给习惯 kindle 阅读的朋友。研究这些东西目的还是想回到比较纯粹的阅读设备上，毕竟手机屏小干扰多，看久了眼睛也有点不舒服。
 
