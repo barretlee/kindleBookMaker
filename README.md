@@ -3,6 +3,8 @@ Kindle Book Maker
 
 [中文文档](./README-zh.md)
 
+**Attention:** [/bin/kindlegen](/bin/kindlegen) in the project is just compatible with Mac OS, if you are windows user, please download the [kindleGen](http://www.amazon.com/gp/feature.html?docId=1000765211) file and replace the origin.
+
 This Project is aimed at creating a kindle book generator. Fetching data from internet, then combo all data to a mini `.mobi` book, what you have to do is just edit profiles and run build commands.
 
 ### Project structure
