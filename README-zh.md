@@ -5,9 +5,6 @@ Kindle 电子书生成工具
 
 **注意：** 项目中提供的 [/bin/kindlegen](/bin/kindlegen) 文件只适用于 Mac 系统，如果您使用的时候 windows，需要在这里下载对应的 [kindleGen](http://www.amazon.com/gp/feature.html?docId=1000765211)，并替换本项目中的文件。
 
-[/bin/kindlegen](/bin/kindlegen) in the project is just compatible with Mac OS, if you are windows user, please download the [kindleGen](http://www.amazon.com/gp/feature.html?docId=1000765211) file and replace the origin.
-
-
 > 花了两个晚上把 OPF 和 epub 格式整明白了，准备把订阅的 RSS 内容抓取下来做成电子书推到 kindle 中阅读。后续也会把自己博客整成电子书，提供给习惯 kindle 阅读的朋友。研究这些东西目的还是想回到比较纯粹的阅读设备上，毕竟手机屏小干扰多，看久了眼睛也有点不舒服。
 
 本项目旨在写一个 Kindle 电子书的构建工具，从互联网上抓取数据，合并整合都生成一本小巧的 `.mobi` 电子书。而使用这个工具，你只需要编辑下配置文件，或者直接运行命令行工具。
