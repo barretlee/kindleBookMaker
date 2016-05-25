@@ -3,8 +3,6 @@ Kindle 电子书生成工具
 
 [English Document](./README.md)
 
-**注意：** 项目中提供的 [/bin/kindlegen](/bin/kindlegen) 文件只适用于 Mac 系统，如果您使用的是 windows，需要在这里下载对应的 [kindleGen](http://www.amazon.com/gp/feature.html?docId=1000765211)，并替换本项目中的文件。
-
 > 花了两个晚上把 OPF 和 epub 格式整明白了，准备把订阅的 RSS 内容抓取下来做成电子书推到 kindle 中阅读。后续也会把自己博客整成电子书，提供给习惯 kindle 阅读的朋友。研究这些东西目的还是想回到比较纯粹的阅读设备上，毕竟手机屏小干扰多，看久了眼睛也有点不舒服。
 
 本项目旨在写一个 Kindle 电子书的构建工具，从互联网上抓取数据，合并整合都生成一本小巧的 `.mobi` 电子书。而使用这个工具，你只需要编辑下配置文件，或者直接运行命令行工具。
@@ -26,6 +24,12 @@ Kindle 电子书生成工具
 最后，使用官方提供了 [kindleGen](http://www.amazon.com/gp/feature.html?docId=1000765211) 工具构建，我已经把这个文件放到了 [/bin/kindlegen](/bin/kindlegen) 下，大约 28M，有点大。
 
 ### 使用方法
+
+首先，Unix/Linux 系统添加下执行权限：
+
+```bash
+chmod +x bin/**/kindlegen
+```
 
 可以下载代码之后，尝试运行下已经提供了一个 DEMO（封面图片就懒得换了，是我自己的头像）：
 
@@ -124,6 +128,11 @@ module.exports = {
 - http://www.idpf.org/epub/30/spec/epub30-publications.html#sec-item-property-values
 - http://www.idpf.org/epub/20/spec/OPF_2.0.1_draft.htm
 - http://www.aliciaramirez.com/2014/05/how-to-make-a-kindle-ebook-from-scratch/
+
+### 贡献者
+
+- [小胡子哥(Barret Lee)](https://github.com/barretlee)
+- [hillwah](https://github.com/hillwah)
 
 ### LICENSE
 

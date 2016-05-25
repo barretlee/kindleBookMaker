@@ -5,8 +5,6 @@ Kindle Book Maker
 
 This Project is aimed at creating a kindle book generator. Fetching data from internet, then combo all data to a mini `.mobi` book, what you have to do is just edit profiles and run build commands.
 
-**Attention:** [/bin/kindlegen](/bin/kindlegen) in the project is just compatible with Mac OS, if you are windows user, please download the [kindleGen](http://www.amazon.com/gp/feature.html?docId=1000765211) file and replace the origin.
-
 ### Project structure
 
 Data comes in three way:
@@ -24,6 +22,12 @@ After preparing data, The program will filter some dirty data, and transfer remo
 Finally, using [kindleGen](http://www.amazon.com/gp/feature.html?docId=1000765211) generate book. I had put the kindleGen file to [/bin/kindlegen](/bin/kindlegen), 28M.
 
 ### Usage
+
+First, run this command:
+
+```bash
+chmod +x bin/**/kindlegen
+```
 
 Try a simple demo:
 
@@ -122,6 +126,11 @@ module.exports = {
 - http://www.idpf.org/epub/30/spec/epub30-publications.html#sec-item-property-values
 - http://www.idpf.org/epub/20/spec/OPF_2.0.1_draft.htm
 - http://www.aliciaramirez.com/2014/05/how-to-make-a-kindle-ebook-from-scratch/
+
+### Contributors
+
+- [小胡子哥(Barret Lee)](https://github.com/barretlee)
+- [hillwah](https://github.com/hillwah)
 
 ### LICENSE
 
