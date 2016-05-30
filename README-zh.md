@@ -1,7 +1,7 @@
 Kindle 电子书生成工具
 ---
 
-[English Document](./README.md)
+[Document in English](./README.md)
 
 > 花了两个晚上把 OPF 和 epub 格式整明白了，准备把订阅的 RSS 内容抓取下来做成电子书推到 kindle 中阅读。后续也会把自己博客整成电子书，提供给习惯 kindle 阅读的朋友。研究这些东西目的还是想回到比较纯粹的阅读设备上，毕竟手机屏小干扰多，看久了眼睛也有点不舒服。
 
