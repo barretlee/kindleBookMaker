@@ -113,7 +113,7 @@ module.exports = {
   - `base`, 入口地址，下载的文件都会放在这里
   - `list`, list 参数，会影响最后生成的电子书的文章排序
 - `bookInfo`, 注意设置 `coverImage`，它为书籍封面图片
-- `ouput`, 可选参数, 默认值为 `./build` 和 `[name]`
+- `output`, 可选参数, 默认值为 `./build` 和 `[name]`
 - `singlePage`, 可选参数, 从 URI 爬取数据时会用到
 - `push2kindle`, 可选参数, `kindle` 参数为你设备对应的推送邮箱, 可以在 [这里](https://www.amazon.cn/mn/dcw/myx.html/ref=kinw_myk_redirect#/home/settings/payment) 设置
 
