@@ -111,7 +111,7 @@ module.exports = {
   - `base`, the entry base, where remote file placed.
   - `list`, it impacts the order of book article list.
 - `bookInfo`, be attention to the `coverImage`, you should better set a value.
-- `ouput`, optional, default is `./build` and `[name]`.
+- `output`, optional, default is `./build` and `[name]`.
 - `singlePage`, optional, for uri spider
 - `push2kindle`, optional, the `kindle` param is your device matched email, can be edit at [here](https://www.amazon.cn/mn/dcw/myx.html/ref=kinw_myk_redirect#/home/settings/payment).
 
